@@ -42,7 +42,6 @@ It includes two main reports:
 
 🙌 Acknowledgments
 Dataset sourced from SQL Server sample credit card data.
-
 Inspired by real-world financial analytics reporting.
 ---
 
