@@ -39,6 +39,11 @@ It includes two main reports:
 - **SQL Server** – Data extraction & transformation
 - **DAX** – Custom calculations and measures
 
+
+🙌 Acknowledgments
+Dataset sourced from SQL Server sample credit card data.
+
+Inspired by real-world financial analytics reporting.
 ---
 
 ## 📐 Key DAX Measures
@@ -103,10 +108,7 @@ Data storytelling with visuals
 
 Business insight generation
 
-🙌 Acknowledgments
-Dataset sourced from SQL Server sample credit card data.
-
-Inspired by real-world financial analytics reporting.
+        
 
 
 
