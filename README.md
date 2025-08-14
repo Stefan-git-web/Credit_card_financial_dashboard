@@ -58,7 +58,7 @@ Source: Open-source / Kaggle dataset (customized for project use)
 Contains customer demographics, credit card transactions, and revenue details.
 
 📸 Dashboard Preview
-<p align="center"> <img src="https://github.com/Stefan-git-web/Power-BI-Sales-Dashboard/blob/main/Screenshot%202025-07-31%20233938.png?raw=true" width="49%"> <img src="https://github.com/Stefan-git-web/Power-BI-Sales-Dashboard/blob/main/Screenshot%202025-07-31%20234005.png?raw=true" width="49%"> </p>
+<p align="center"> <img src="[https://github.com/Stefan-git-web/Credit_card_financial_dashboard/blob/main/credit_card_Report_customer.pdf](https://github.com/Stefan-git-web/Credit_card_financial_dashboard/blob/main/credit_card_Report_transaction.pdf)?raw=true" width="49%"> <img src="?raw=true" width="49%"> </p>
 📊 Key Visuals in Dashboard
 
 Revenue by Week – Tracks trends over time.
