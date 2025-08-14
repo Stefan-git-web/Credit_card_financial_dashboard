@@ -1,114 +1,85 @@
-# Credit_card_financial_dashboard
-Power BI dashboard
-# 📊 Credit Card Financial Dashboard
+📊 Credit Card Financial Dashboard – Power BI Project
+📌 Project Overview
 
-An interactive **Power BI** dashboard analyzing credit card customer and transaction data.  
-The project delivers business insights into customer demographics, spending behavior, and revenue trends, helping stakeholders make data-driven decisions.
+This Credit Card Financial Dashboard provides a comprehensive view of customer spending behavior, revenue patterns, and transaction insights.
+It helps in identifying key trends, customer demographics, and business opportunities by analyzing revenue, interest, card usage, and expenditure patterns.
 
----
+🎯 Key Objectives
 
-## 🚀 Project Overview
-This dashboard integrates data from a **SQL Server** database and applies **DAX measures** for deeper analysis.  
-It includes two main reports:
-1. **Customer Report** – Profiling revenue by demographics and customer attributes.
-2. **Transaction Report** – Tracking spending patterns, transaction volumes, and card performance.
+Analyze revenue growth and transaction trends over time.
 
----
+Understand customer demographics (age, gender, marital status, job type, education).
 
-## 📌 Key Insights
+Identify high-value customers and revenue-contributing segments.
 
-### **Customer Report Highlights**
-- **Revenue by Income Group:** High-income customers generate the largest share of revenue (~23M).
-- **Gender Split:** Female customers contribute ~31M revenue, males ~26M.
-- **Top States:** TX, NY, CA, FL, and NJ lead in revenue generation.
-- **Age Distribution:** Customers aged **60–70** contribute the highest revenue (~14M).
-- **Education Impact:** Post-graduate and graduate customers generate the highest revenue.
-- **Marital Status:** Married customers are slightly ahead in total revenue compared to single customers.
+Track credit card category performance (Gold, Silver, Blue, Platinum).
 
-### **Transaction Report Highlights**
-- **Quarterly Trends:** Revenue peaks in **Q4** at 14.5M, with stable transaction counts.
-- **Expenditure Types:** Bills, entertainment, and fuel are top categories.
-- **Card Category Performance:** Blue cards dominate with ~47M revenue.
-- **Payment Methods:** Swipe transactions are most common, followed by chip and online.
-- **Customer Job Analysis:** Businessmen generate the highest revenue (~18M).
+Study spending patterns by expenditure type, income group, and geography.
 
----
+📈 Project Insights
+Week-on-Week (WoW) Change
 
-## 🛠️ Tools & Technologies
-- **Power BI** – Data visualization & dashboard creation
-- **SQL Server** – Data extraction & transformation
-- **DAX** – Custom calculations and measures
+Revenue increased by 28.8%
 
+Total Transaction Amount & Count increased by xx% & xx%
 
-🙌 Acknowledgments
-Dataset sourced from SQL Server sample credit card data.
-Inspired by real-world financial analytics reporting.
----
+Customer count increased by xx%
 
-## 📐 Key DAX Measures
-```DAX
-IncomeGroup = SWITCH(
-    TRUE(),
-    cust_detail[Income] < 35000, "Low",
-    cust_detail[Income] >= 35000 && cust_detail[Income] < 70000, "Med",
-    cust_detail[Income] >= 70000, "High",
-    "Unknown"
-)
+Year-to-Date (YTD) Overview
 
-AgeGroup = SWITCH(
-    TRUE(),
-    cust_detail[Customer_Age] < 30, "20-30",
-    cust_detail[Customer_Age] >= 30 && cust_detail[Customer_Age] < 40, "30-40",
-    cust_detail[Customer_Age] >= 40 && cust_detail[Customer_Age] < 50, "40-50",
-    cust_detail[Customer_Age] >= 50 && cust_detail[Customer_Age] < 60, "50-60",
-    cust_detail[Customer_Age] >= 60 && cust_detail[Customer_Age] < 73, "60-70",
-    cust_detail[Customer_Age] <= 73, "73+",
-    "Unknown"
-)
+Overall Revenue: 57M
 
-Current_Week_Revenue =
-CALCULATE(
-    SUM(cc_details[Revenue]),
-    FILTER(ALL(cc_details), cc_details[Week_Num2] = MAX(cc_details[Week_Num2]))
-)
+Total Interest: 8M
 
-Previous_Week_Revenue =
-CALCULATE(
-    SUM(cc_details[Revenue]),
-    FILTER(ALL(cc_details), cc_details[Week_Num2] = MAX(cc_details[Week_Num2]) - 1)
-)
+Total Transaction Amount: 46M
 
-Revenue =
-cc_details[Annual_Fees] + cc_details[Total_Trans_Amt] + cc_details[Interest_Earned]
-📷 Dashboard Previews
-Customer Report
-Transaction Report
+Male customers contribute 31M, Female customers contribute 26M
 
-📂 How to Use
-Clone the repository:
+Blue & Silver credit cards account for 93% of transactions
 
-bash
-Copy
-git clone https://github.com/Stefan-git-web/Credit_card_financial_dashboard.git
-Open Credit_Card_Dashboard.pbix in Power BI Desktop.
+Top contributing states: TX, NY & CA (68% combined)
 
-Ensure SQL Server database access and adjust the connection string if needed.
+Activation Rate: 57.5%
 
-Refresh the dataset to load live data.
+Delinquent Rate: 6.06%
 
-📈 Skills Demonstrated
-Data modeling in Power BI
+🛠 Tools & Technologies Used
 
-SQL query integration
+Power BI – Dashboard creation & data visualization
 
-Advanced DAX calculations
+Excel / CSV – Data storage & cleaning
 
-Data storytelling with visuals
+DAX – Calculated measures and KPIs
 
-Business insight generation
+📂 Dataset
 
-        
+Source: Open-source / Kaggle dataset (customized for project use)
 
+Contains customer demographics, credit card transactions, and revenue details.
 
+📸 Dashboard Preview
+<p align="center"> <img src="https://github.com/Stefan-git-web/Power-BI-Sales-Dashboard/blob/main/Screenshot%202025-07-31%20233938.png?raw=true" width="49%"> <img src="https://github.com/Stefan-git-web/Power-BI-Sales-Dashboard/blob/main/Screenshot%202025-07-31%20234005.png?raw=true" width="49%"> </p>
+📊 Key Visuals in Dashboard
 
+Revenue by Week – Tracks trends over time.
+
+Top 5 States by Revenue – Geographic analysis.
+
+Revenue by Marital Status, Income Group, Education Level, Dependents – Customer profiling.
+
+Revenue by Card Category & Chip Usage – Product performance.
+
+Revenue by Expenditure Type – Spending behavior.
+
+🚀 How to Use
+
+Download the .pbix file from this repository.
+
+Open it in Power BI Desktop.
+
+Explore insights using filters and slicers.
+
+📢 Conclusion
+
+This dashboard empowers decision-makers with data-driven insights to boost marketing strategies, improve customer engagement, and optimize credit card offerings.
 
