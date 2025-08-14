@@ -58,8 +58,12 @@ Source: Open-source / Kaggle dataset (customized for project use)
 Contains customer demographics, credit card transactions, and revenue details.
 
 📸 Dashboard Preview
-<p align="center"> <img src="[https://github.com/Stefan-git-web/Credit_card_financial_dashboard/blob/main/credit_card_Report_customer.pdf](https://github.com/Stefan-git-web/Credit_card_financial_dashboard/blob/main/credit_card_Report_transaction.pdf)?raw=true" width="49%"> <img src="?raw=true" width="49%"> </p>
-📊 Key Visuals in Dashboard
+| Report Type                | Link                                                                                                                                     |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Customer Report**        | [📄 View PDF](https://github.com/Stefan-git-web/Credit_card_financial_dashboard/blob/main/credit_card_Report_customer.pdf)               |
+| **Transaction Report**     | [📄 View PDF](https://github.com/Stefan-git-web/Credit_card_financial_dashboard/blob/main/credit_card_Report_transaction.pdf)            |
+| **Weekly Insights Report** | [📄 View PDF](https://github.com/Stefan-git-web/Credit_card_financial_dashboard/blob/main/credit%20card%20weekly%20report%20insight.pdf) |
+
 
 Revenue by Week – Tracks trends over time.
 
